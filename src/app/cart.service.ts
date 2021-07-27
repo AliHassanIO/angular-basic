@@ -11,6 +11,12 @@ export class CartService {
     this.items.push(product);
   }
 
+  deleteFromCart(product: Number) {
+    console.log(product);
+    this.items = this.items.filter(item => item.id !== product);
+    console.log(this.items);
+  }
+
   getItems() {
     return this.items;
   }
