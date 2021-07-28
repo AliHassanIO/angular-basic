@@ -20,7 +20,7 @@ import { ProductFormComponent } from './product-form/product-form.component';
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
-      { path: 'product-update/:productId', component: ProductFormComponent}
+      { path: 'product-update/?:productId', component: ProductFormComponent}
     ])
   ],
   declarations: [
